@@ -1,0 +1,11 @@
+{{#each posts as |post| }}
+<div class="row align-center mb-5">
+  <div class="col-md-6">
+    <h2>{{{post.title}}} by {{user.name}}</h2>
+  </div>
+  <div class="col-md-6">
+    <h3>Posted by {{post.author}} on {{post.created_on}}</h3>
+  </div>
+  <p>{{post.description}}</p>
+</div>
+{{/each}}
